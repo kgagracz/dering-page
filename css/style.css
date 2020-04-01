@@ -4,12 +4,38 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     padding: 0;
 }
+
+section {
+    min-height: 100vh;
+}
+
+h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 80px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
 
 /* added styles  */
 
@@ -51,7 +77,6 @@ body {
 
 #hero {
     background-image: url('../img/amethyst-2186842_1920.jpg');
-    min-height: 100vh;
 }
 
 .description {
@@ -72,6 +97,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .opinion {
@@ -90,9 +116,63 @@ body {
     border-radius: 50%;
 }
 
-.opinion__heading {
-    text-align: center;
-    color: rgb(49, 44, 34);
-    width: 100%;
-    font-style: italic;
+
+/* GALLERY SECTION  */
+
+#galeria {
+    background-image: url('../img/art-gallery-4674319_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery__image {
+    border-radius: 20px;
+    object-fit: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 10px;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+.gallery__image:hover {
+    height: 450px;
+    width: 550px;
+}
+
+/* OFFER SECTION  */
+
+#oferta {
+    background-image: url('../img/jewelry-store-1803808_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+}
+
+.offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.offer__item {
+    border-radius: 20px;
+    height: 35%;
+    width: 30%;
+    margin: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.offer__item__description {
+    padding: 10px;
+    line-height: 1.5rem;
 }
